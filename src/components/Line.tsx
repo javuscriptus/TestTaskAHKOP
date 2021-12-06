@@ -49,23 +49,8 @@ export const Line: React.FC<Props> = (props) => {
         >
             {!isRoot && (
                 <div onClick={onClickHandler}>
-                    <Arrow
-                        style={{
-                            transform: isOpened
-                                ? "translateX(-5px)"
-                                : `rotate(-90deg) translateY(-5px)`,
-                            fontSize: "12px",
-                            width: "10px"
-                        }}
-                    />
-                    <Object
-                        style={{
-                            margin: "0 15px",
-                            transform: "translateY(2px)",
-                            color: "#5f74a4",
-                            width: "15px"
-                        }}
-                    />
+                    <Arrow className={isOpened ? `arrow open` : `arrow close`}/>
+                    <Object className="object"/>
                     {elem?.name}
                 </div>
             )}

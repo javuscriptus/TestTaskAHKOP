@@ -3,3 +3,23 @@
     cursor: pointer;
     border-left: 1px solid #5f74a4;
 }
+
+.arrow {
+    font-size: 12px;
+    width: 10px;
+}
+
+.object {
+    margin: 0 15px;
+    transform: translateY(2px);
+    color: #5f74a4;
+    width: 15px;
+}
+
+.open {
+    transform: translateX(-5px);
+}
+
+.close {
+    transform:rotate(-90deg) translateY(-5px);
+}
